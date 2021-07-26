@@ -4,10 +4,12 @@ import { PARTNERS } from '../shared/partners';
 import { Card, ListItem } from 'react-native-elements';
 import { FlatList } from 'react-native-gesture-handler';
 
-function Mission(props){
+function Mission(){
 
     return(
-        <Card>
+        <Card
+            title='Our Mission'
+        >
             <Text style={{margin: 10}}>
             We present a curated database of the best campsites 
             in the vast woods and backcountry of the World Wide 
@@ -40,7 +42,7 @@ class About extends Component {
         const renderPartner = ({ item }) =>{
 
             return (
-                < ListItem 
+                <ListItem 
                     title={item.name}
                     subtitle={item.description}
                     leftAvatar={{
